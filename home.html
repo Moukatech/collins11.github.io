@@ -5,7 +5,22 @@
 	<meta charset="utf-8" />
 	
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script type="text/javascript" 
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" 
+        src="easy-comment/jquery.easy-comment.min.js"></script>
+	<script type="text/javascript">
+    jQuery(document).ready(function(){
+    // Your other javascript code if any
 
+    $("#commentsall").EasyComment({
+      path:"/easy-comment/", //Change it to the folder where you put the easycomment files
+      moderate:false,
+      maxReply:5
+    });
+    // Your other javascript code if any
+    });
+    </script>
 	<!--[if IE]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<!--[if lte IE 7]>
@@ -67,18 +82,20 @@ For the casual game player, the Samsung Gear, is more suitable and is cable free
 	  <header>
 			<h2>Comments</h2>
 		</header>
+		<div id="commentsall" style="width:1024px;height:800px;">
+	
 <form method='post'>
   NAME: <input type='text' name='name' id='name' /><br />
-
+<br/>
   Email: <input type='text' name='email' id='email' /><br />
+	<br/>
+  Comment:<textarea name='comment' id='comment'></textarea><br />
 
-  Comment:<br />
-  <textarea name='comment' id='comment'></textarea><br />
-
-  <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+ 
 
   <input type='submit' value='Submit' />  
 </form>
+		</div>
     <ol id="posts-list" class="hfeed">
       <li><article id="comment_1" class="hentry">	
 				<footer class="post-info">
