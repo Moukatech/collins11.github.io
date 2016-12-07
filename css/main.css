@@ -123,7 +123,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	/* Banner */
 	#banner h1 {font-size: 3.571em; line-height: .6;}
 	#banner h1 a:link, #banner h1 a:visited {
-		color: #000305;
+		color: #4dd1ce;
 		display: block;
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
@@ -132,7 +132,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
-		color: #C74350;
+		color: #27544e;
 		text-shadow: none;
 	}
 	
@@ -140,7 +140,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	
 	/* Main Nav */
 	#banner nav {
-		background: #000305;
+		background: #4dd1ce;
 		font-size: 1.143em;
 		height: 40px;
 		line-height: 30px;
@@ -166,7 +166,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
-		background: #C74451;
+		background: #0a0202;
 		color: #fff;
 		text-shadow: none !important;
 	}
@@ -204,7 +204,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h2 {color: #0a0202; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
